@@ -19,10 +19,12 @@ sudo apt-get install make gcc gpp apache2 php php-mysql libapache2-mod-php php-g
 ### 2. Criando a conta de usuário Zabbix  
 Para todos os processos daemons do Zabbix, é necessário que exista um usuário comum (sem privilégios de root) para a sua execução.  
 Para criar o usuário Zabbix, execute os seguintes comandos:  
+
 ```
 groupadd zabbix  
 useradd -g zabbix zabbix  
 ```
+
 *Importante!*  
 Se o Zabbix Server e o Zabbix Agent estiverem na mesma máquina, é recomendável que estejam rodando com usuários diferentes. Caso os dois sejam executados com o mesmo usuário, o agente poderá acessar o arquivo de configuração do Zabbix Server e informações sensíveis que poderão ser facilmente recuperadas.  
 
@@ -41,38 +43,49 @@ shell> mysql -uzabbix -p<password> zabbix < schema.sql
 shell> mysql -uzabbix -p<password> zabbix < images.sql  
 shell> mysql -uzabbix -p<password> zabbix < data.sql  
 ```
+
 Após criar o banco, procesa com para os passos de compilação do Zabbix.  
 
 ### 4. Configurando as fontes e compilando
 Para configurar as fontes para a compilação, é necessário que seja definido qual o tipo de banco de dados será utilizado. Os binários serão compilados para um banco de dados específico.  
 Como no nosso caso escolhemos utilizar o MySQL, utiizaremos o seguinte comando para configurar as fontes:  
+
 ```
 ./configure --enable-server --enable-agent --with-mysql --enable-ipv6 --with-net-snmp --with-libcurl --with-libxml2  
 ```
-Após configurar as fontes, execute o seguinte comando para compilar o Zabbix Server:  
+
+Após configurar as fontes, execute o seguinte comando para compilar o Zabbix Server: 
+ 
 ```
 sudo make install  
 ```
 
 ### 5. Revisando e editando os arquivos de configuração  
-Abra o arquivo de configuração do Zabbix com o seguinte comando:  
+Abra o arquivo de configuração do Zabbix com o seguinte comando: 
+ 
 ```
 # vim /usr/local/etc/zabbix_server.conf  
 ```
-Procure pelas as linhas  
+
+Procure pelas as linhas:  
+  
 ```
 DBHost=localhost  
 DBName=zabbix  
 DBUser=zabbix  
 DBPassword=zabbix  
 ```
+
 Todas essas linhas existem no arquivo de configuração mas estão comentadas. Portanto, é só descomentar a linha e adicionar o parâmetro após o sinal de igualdade.  
 
-Abra o arquivo de configuração do PHP com o seguinte comando:  
+Abra o arquivo de configuração do PHP com o seguinte comando: 
+ 
 ```
 # vim /etc/php/7.0/apache2/php.ini  
 ```
+
 Procure pelas seguintes linhas no arquivo e altere os valores.  
+
 ```
 memory_limit=128M  
 post_max_size=16M  
@@ -91,6 +104,7 @@ A localização do diretório HTML do Apache pode variar em função da distro u
  - /var/www/html (Debian, Ubuntu)
  
  Utilize os comandos a seguir para criar o diretório do zabbix e copiar os arquivos para o mesmo.  
+
  ```
  # mkdir <htdocs>/zabbix  
  # cd frontends/php  
@@ -101,10 +115,12 @@ A localização do diretório HTML do Apache pode variar em função da distro u
  
  ### 7. Iniciando o daemon do Zabbix Server e reinciando o Apache
  Após copiar os arquivos da interface web, é necessário reiniciar o serviço do Apache para que as alterações sejam aplicadas.  
+
  ```
  sudo service apache2 restart  
  ```
  Após reiniciar o serviço do Apache, é a hora de iniciar o daemon do Zabbix Server.  
+
  ```
  shel> zabbix_server  
  ```
