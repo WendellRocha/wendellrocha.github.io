@@ -111,9 +111,9 @@ A localização do diretório HTML do Apache pode variar em função da distro u
  Utilize os comandos a seguir para criar o diretório do zabbix e copiar os arquivos para o mesmo.  
 
  ```
- # mkdir <htdocs>/zabbix
- #cd frontends/php
- # cp -a . <htdocs>/zabbix  
+# sudo mkdir <htdocs>/zabbix
+# sudo cd frontends/php
+# cp -a . <htdocs>/zabbix  
  ```
  
  E... para terminar...
