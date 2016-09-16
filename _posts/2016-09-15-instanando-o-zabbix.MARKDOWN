@@ -124,6 +124,7 @@ A localização do diretório HTML do Apache pode variar em função da distro u
  ```
  sudo service apache2 restart  
  ```
+ 
  Após reiniciar o serviço do Apache, é a hora de iniciar o daemon do Zabbix Server.  
 
  ```
