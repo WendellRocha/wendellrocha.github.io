@@ -9,13 +9,17 @@ Como esse é o primeiro post do "blog", vamos começar com o Zabbix. Já que ven
 
 ### 1. Baixando o pacote e instalando as dependências
 Antes de tudo, acesse a [página de download do Zabbix](http://www.zabbix.com/download.php) e baixe o arquivo de fontes. Depois de baixado, extraia o arquivo de fontes com o seguinte comando:  
+
 ```
 $ tar -zxvf zabbix-3.0.3.orig.tar.gz  
 ```
+
 Após descompactar o arquivo, é a hora de instalar as dependências para podermos compilar o pacote do Zabbix.  
+
 ```
 sudo apt-get install make gcc gpp apache2 php php-mysql libapache2-mod-php php-gd libsnmp-dev libcurl4-openssl-dev vim mysql-server mysql-client libmysqld-dev libcurl-dev php-bcmath php-mbstring php-xml  
 ```
+
 ### 2. Criando a conta de usuário Zabbix  
 Para todos os processos daemons do Zabbix, é necessário que exista um usuário comum (sem privilégios de root) para a sua execução.  
 Para criar o usuário Zabbix, execute os seguintes comandos:  
@@ -31,6 +35,7 @@ Se o Zabbix Server e o Zabbix Agent estiverem na mesma máquina, é recomendáve
 ### 3. Criando o banco de dados do Zabbix  
 Para os daemons do Zabbix Server e para a interface web, é necessário um banco de dados.  
 Para criar o banco de dados do Zabbix Server, execute os seguintes comandos:  
+
 ```
 shell> mysql -uroot -p<password>  
 mysql> create database zabbix character set utf8 collate utf8_bin;  
@@ -106,8 +111,8 @@ A localização do diretório HTML do Apache pode variar em função da distro u
  Utilize os comandos a seguir para criar o diretório do zabbix e copiar os arquivos para o mesmo.  
 
  ```
- # mkdir <htdocs>/zabbix  
- # cd frontends/php  
+ # mkdir <htdocs>/zabbix
+ #cd frontends/php
  # cp -a . <htdocs>/zabbix  
  ```
  
