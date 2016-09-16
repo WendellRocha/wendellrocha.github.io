@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
+title: WEndell Rocha
+email: wendell.rocha@ccc.ufcg.edu.br
+description: Estudante de Ciência da Computação, fotógrado amador e programador inexperiente.
 url: # the base hostname & protocol for your site
 
 
@@ -14,7 +14,7 @@ url: # the base hostname & protocol for your site
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          America/Recife
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,14 +33,14 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
-  email:
+  name: Wendell Rocha
+  avatar: avatar.jpg
+  job: "Estudante"
+  bio: "Estudante de Ciência da Computação, fotógrafo amador e programador inexperiente."
+  email: wendell.rocha@ccc.ufcg.edu.br
   disqus-shortname:
   twitter: #username
-  facebook: #username
+  facebook: #wendellrocha
   google:
     plus: #username
     analytics:
@@ -48,16 +48,16 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: #WendellRocha
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
-  instagram: #username
+  instagram: #wendellrochaa
   lastfm: #username
   tumblr: #username
   pinterest: #username
   foursquare: #username
-  steam: #username
+  steam: #wendros
   dribbble: #username
   youtube: #username
   soundcloud: #username
