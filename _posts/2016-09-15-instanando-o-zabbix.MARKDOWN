@@ -113,7 +113,7 @@ A localização do diretório HTML do Apache pode variar em função da distro u
 ```
 # mkdir <htdocs>/zabbix  
 # cd frontends/php  
-#: cp -a . <htdocs>/zabbix
+# cp -a . <htdocs>/zabbix
 ```
  
  E... para terminar...
