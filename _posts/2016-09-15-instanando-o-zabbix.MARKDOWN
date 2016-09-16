@@ -118,7 +118,7 @@ A localização do diretório HTML do Apache pode variar em função da distro u
  
  E... para terminar...
  
- ### 7. Iniciando o daemon do Zabbix Server e reinciando o Apache
+### 7. Iniciando o daemon do Zabbix Server e reinciando o Apache
  Após copiar os arquivos da interface web, é necessário reiniciar o serviço do Apache para que as alterações sejam aplicadas.  
 
  ```
