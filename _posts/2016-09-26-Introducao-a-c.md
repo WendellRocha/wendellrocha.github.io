@@ -91,8 +91,10 @@ main () {
 	printf("x = %d\n", ++x);
 	printf("x = %d\n", x);
 }
- ```
+```
+ 
 Nesse caso, a saída será:
+
 
 ```
 x = 0
