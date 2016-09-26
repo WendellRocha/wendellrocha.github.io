@@ -24,11 +24,11 @@ Então vamos lá! :)
  * O tipo void é utilizado quando a função não tem retorno.  
    Ex:  
    
-	```c
-	#include <stdio.h>  
-	void imprimeNome() {  
-		print("Wendell");    
-	}  
+	```C
+	#include <stdio.h>
+	void imprimeNome() {
+		print("Wendell");  
+	}
 	```
 	
 #### Expressões booleanas
@@ -84,7 +84,7 @@ Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a express
 	
    Ex:  
 	
-	```c
+	```C
 	main () {
 		int x = 0;
 		printf("x = %d\n", x++);
@@ -94,7 +94,7 @@ Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a express
 	}
 	```
   
-Nesse caso, a saída será:
+	Nesse caso, a saída será:
 
 
 	```
