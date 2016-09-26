@@ -25,9 +25,9 @@ Então vamos lá! :)
    Ex:  
    
 	```c
-	#include <stdio.h>
-	void imprimeNome() {
-		print("Wendell");
+	#include <stdio.h>  
+	void imprimeNome() {  
+		print("Wendell");  
 	}
 	```
 	
@@ -47,7 +47,7 @@ Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a express
 | :--------: | :--------: |
 | !x         | NOT x      |
 | x && y     | x AND y    |
-| x || y     | x OR y     |
+| x \|\| y   | x OR y     |
 
 ### Operadores aritméticos
 
@@ -89,6 +89,7 @@ Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a express
 		printf("x = %d\n", x);
 	}
 	```  
+
 	```
 	x = 0
 	x = 1
