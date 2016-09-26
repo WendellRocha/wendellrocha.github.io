@@ -9,6 +9,8 @@ Oi pessoal!
 Pretendo ir adicionando na página um pouco de tudo. Comecei falando [sobre o Zabbix](https://wendellrocha.github.io/articles/2016-09/instalando-o-zabbix) e hoje vou dar uma pequena introdução sobre C.
 Então vamos lá! :)  
 
+<!--more-->
+
 ### Tipos de dados
 
 | Tipo           | Espaço   | Escala                            |
