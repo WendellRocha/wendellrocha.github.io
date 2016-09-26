@@ -65,13 +65,13 @@ Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a express
  
 #### Operadores de atribuição
  
- | Expressão  | Forma compacta |
- | :--------: | :------------: |
- | x = x + y  | x+=y           |
- | x = x - y  | x-=y           |
- | x = x * y  | x*=y           |
- | x = x / y  | x/=y           |
- | x = x % y  | x%=y           |  
+| Expressão  | Forma compacta |
+| :--------: | :------------: |
+| x = x + y  | x+=y           |
+| x = x - y  | x-=y           |
+| x = x * y  | x*=y           |
+| x = x / y  | x/=y           |
+| x = x % y  | x%=y           |  
  
   * Incremento e decremento  
 	**Forma prefixa:** ++variavel; --variavel;  
@@ -92,13 +92,12 @@ main () {
 	printf("x = %d\n", x);
 }
  ```
-  
-  Nesse caso, a saída será:
+Nesse caso, a saída será:
 
 ```
-x = 0  
-x = 1  
-x = 2  
+x = 0
+x = 1
+x = 2
 x = 2
 ```
 	
