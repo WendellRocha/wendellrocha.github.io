@@ -7,6 +7,8 @@ date: 2016-09-15 23:57:00
 Oi pessoal!  
 Como esse é o primeiro post do "blog", vamos começar com o Zabbix. Já que venho brincando com ele há semanas. Então, vamos lá!  
 
+<!--more-->
+
 ### 1. Baixando o pacote e instalando as dependências
 Antes de tudo, acesse a [página de download do Zabbix](http://www.zabbix.com/download.php) e baixe o arquivo de fontes. Depois de baixado, extraia o arquivo de fontes com o seguinte comando:  
 
