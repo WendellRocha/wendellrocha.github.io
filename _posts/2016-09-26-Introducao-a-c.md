@@ -24,7 +24,7 @@ Então vamos lá! :)
  * O tipo void é utilizado quando a função não tem retorno.  
    Ex:  
    
-	```C
+	``` c
 	#include <stdio.h>
 	void imprimeNome() {
 		print("Wendell");  
@@ -82,27 +82,26 @@ Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a express
 	Na forma **prefixa**, primeiro a variável é alterada e depois utiizada.  
 	Na forma **posfixa**, primeiro a variável é utilizada e depois alterada.  
 	
-   Ex:  
+  Ex:  
 	
-	```C
-	main () {
-		int x = 0;
-		printf("x = %d\n", x++);
-		printf("x = %d\n", x);
-		printf("x = %d\n", ++x);
-		printf("x = %d\n", x);
-	}
-	```
+  ``` c
+  main () {
+	int x = 0;
+	printf("x = %d\n", x++);
+	printf("x = %d\n", x);
+	printf("x = %d\n", ++x);
+	printf("x = %d\n", x);
+  }
+  ```
   
-	Nesse caso, a saída será:
+  Nesse caso, a saída será:
 
-
-	```
-	x = 0
-	x = 1
-	x = 2
-	x = 2
-	```
+  ```
+  x = 0
+  x = 1
+  x = 2
+  x = 2
+  ```
 	
 Bom pessoal, por hoje é só o básico. Já estou elaborando o próximo post e vou liberar nos próximos dias.  
 Até mais! :)
