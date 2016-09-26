@@ -31,9 +31,11 @@ Então vamos lá! :)
 	}
 	```
 	
-### Expressões booleanas
+#### Expressões booleanas
 
 Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a expressão for falsa.  
+  
+|            |                             |  
 | :--------: | :-------------------------: |
 | x == y     | x igual a y                 |
 | x != y     | x diferente de y            |
@@ -42,15 +44,17 @@ Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a express
 | x <= y     | x menor (que) ou igual a y  |
 | x >= y     | x maior (que) ou igual a y  |
 
-### Operadores lógicos
+#### Operadores lógicos
 
+|            |            |
 | :--------: | :--------: |
 | !x         | NOT x      |
 | x && y     | x AND y    |
 | x \|\| y   | x OR y     |
 
-### Operadores aritméticos
+#### Operadores aritméticos
 
+|           |              |
 | :-------: | :----------: |
 | +         | soma         |
 | -         | subtração    |
@@ -60,7 +64,7 @@ Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a express
 
  * Operadores aritmétios > Operadores relacionais > Operadores lógicos  
  
- ### Operadores de atribuição
+ #### Operadores de atribuição
  
  | Expressão  | Forma compacta |
  | :--------: | :------------: |
@@ -88,7 +92,11 @@ Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a express
 		printf("x = %d\n", ++x);
 		printf("x = %d\n", x);
 	}
-	```  
+
+	```
+  
+Nesse caso, a saída será:
+
 
 	```
 	x = 0
