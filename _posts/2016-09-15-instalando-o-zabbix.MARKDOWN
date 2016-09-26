@@ -2,6 +2,8 @@
 layout: post
 title: Instalando o Zabbix no Ubuntu Server 16.04
 date: 2016-09-15 23:57:00
+categories: Zabbix
+tags: Zabbix
 ---
 
 Oi pessoal!  
