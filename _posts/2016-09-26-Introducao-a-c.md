@@ -27,8 +27,8 @@ Então vamos lá! :)
 	```c
 	#include <stdio.h>  
 	void imprimeNome() {  
-		print("Wendell");  
-	}
+		print("Wendell");    
+	}  
 	```
 	
 #### Expressões booleanas
@@ -62,9 +62,9 @@ Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a express
 | /         | divisão      |
 | %         | resto        |  
 
- * Operadores aritmétios > Operadores relacionais > Operadores lógicos  
+ * Operadores aritmétios > Operadores relacionais > Operadores lógicos
  
- #### Operadores de atribuição
+#### Operadores de atribuição
  
  | Expressão  | Forma compacta |
  | :--------: | :------------: |
@@ -92,7 +92,6 @@ Expressões booleanas retornam 1 se a expressão for verdadeira e 0 se a express
 		printf("x = %d\n", ++x);
 		printf("x = %d\n", x);
 	}
-
 	```
   
 Nesse caso, a saída será:
