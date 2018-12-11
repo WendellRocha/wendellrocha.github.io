@@ -28,23 +28,41 @@ section {
 }
 
 #mainNav {
-    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-    background-color: #fff;
+    background-color: transparent !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff !important;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
 #mainNav .navbar-brand {
     font-weight: 400;
-    text-transform: uppercase;
-    color: #007bff;
+    text-transform: capitalize;
+    color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#mainNav.active {
+    background-color:#fff !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    color: #000;
+}
+
+#mainNav.active .navbar-brand {
+    color: #000;
 }
 
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #007bff;
+    text-shadow: 1px solid #000;
+}
+
+#mainNav.active .navbar-nav>li.nav-item>a.nav-link,
+#mainNav.active .navbar-nav>li.nav-item>a.nav-link:focus {
+    font-size: .9rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #212529;
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link,
@@ -52,12 +70,7 @@ section {
     font-size: .9rem;
     font-weight: 200;
     text-transform: uppercase;
-    color: #212529;
-}
-
-#mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
-#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
-    color: #007bff;
+    color: #fff;
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active,
