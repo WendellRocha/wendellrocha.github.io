@@ -1,0 +1,259 @@
+body,
+html {
+    width: 100%;
+    height: 100%
+}
+
+hr {
+    max-width: 50px;
+    border-width: 3px;
+    border-color: #007bff;
+}
+
+hr.light {
+    border-color: #fff
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+    padding: 8rem 0;
+}
+
+#mainNav {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#mainNav .navbar-brand {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #007bff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#mainNav .navbar-brand:focus,
+#mainNav .navbar-brand:hover {
+    color: #007bff;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+    font-size: .9rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #212529;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+    color: #007bff;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
+    color: #007bff !important;
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
+    background-color: transparent;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    font-size: 13px;
+    padding: 5px 0px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header.masthead {
+    padding-top: calc(6rem + 72px);
+    padding-bottom: 6rem;
+}
+
+header.masthead h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+header.masthead h2 {
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#avatar {
+    height: 258px;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-bottom: 40px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-header {
+    color: #263238;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.section-header .section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #263238;
+    position: relative;
+}
+
+.section-header .section-title:before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    width: 80px;
+    height: 2px;
+    background: #007bff;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.item-boxes {
+    padding: 30px;
+    border-radius: 4px;
+    border: 1px solid #eaeaea;
+    margin: 15px 0;
+    webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.item-boxes .icon {
+    margin-bottom: 10px;
+}
+
+.item-boxes .icon i {
+    font-size: 30px;
+    line-height: 60px;
+    color: #007bff;
+}
+
+.item-boxes h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.item-boxes p {
+    margin: 0;
+}
+
+.item-boxes:hover {
+    background: transparent;
+    box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.35);
+}
+
+.services-item {
+    padding: 30px 15px;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.services-item .icon {
+    margin-bottom: 20px;
+}
+
+.services-item .icon i {
+    width: 60px;
+    height: 60px;
+    background: #f9f9f9;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.services-item .color-1 i {
+    background: #fff;
+    color: #007bff !important;
+}
+
+.services-item .services-content {
+    padding-left: 65px;
+}
+
+.services-item .services-content h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.services-item .services-content h3 a {
+    color: #272727;
+}
+
+.services-item .services-content h3 a:hover {
+    color: #F97794;
+}
+
+.services-item:hover {
+    box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.35);
+}
+
+.services-item:hover .icon i {
+    background: transparent;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 0.1px solid #007bff;
+}
+
+#contato {
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+#contato .section-heading {
+    font-size: 28px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #263238;
+    position: relative;
+}

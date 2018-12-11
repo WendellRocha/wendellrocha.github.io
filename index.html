@@ -1,121 +1,162 @@
----
-permalink: /
----
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ site.description }}">
-        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-        {% if site.favicon_img %}
-        <link rel="shortcut icon" href="{{ site.favicon_img_path }}" />
-        {% endif %}
-        <link rel="stylesheet" href="{{ "css/front.css" | prepend: site.baseurl }}">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <div class="content">
-            {% if site.front_img %}
-            <img src="{{ site.front_img_path }}" id="fullscreen">
-            {% endif %}
+<html lang="pt-br">
 
-            {% if site.avatar %}
-                <img src="{{ site.avatar_img_path }}" id="avatar">
-            {% endif %}
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wendell Rocha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/line-icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/fontawesome-free/css/all.min.css">
+  </head>
 
-            <h1>{{ site.name }}</h1>
-            <h3>{{ site.description }}</h3>
-
-                <ul>
-                    {% if site.github_username %}
-                    <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
-                    {% endif %}
-
-                    {% if site.codepen_username %}
-                    <li><a class="fa fa-2x fa-codepen" href="https://codepen.io/{{ site.codepen_username }}"><span class="description">CodePen</span></a></li>
-                    {% endif %}
-
-                    {% if site.facebook_username %}
-                    <li><a class="fa fa-2x fa-facebook" href="https://facebook.com/{{ site.facebook_username }}"><span class="description">Facebook</span></a></li>
-                    {% endif %}
-
-                    {% if site.vk_username %}
-                    <li><a class="fa fa-2x fa-vk" href="https://vk.com/{{ site.vk_username }}"><span class="description">ВКонтакте</span></a></li>
-                    {% endif %}
-
-                    {% if site.twitter_username %}
-                    <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span class="description">Twitter</span></a></li>
-                    {% endif %}
-
-                    {% if site.google_plus_username %}
-                    <li><a class="fa fa-2x fa-google-plus" href="https://plus.google.com/+{{ site.google_plus_username }}"><span class="description">Google +</span></a></li>
-                    {% endif %}
-
-                    {% if site.linkedin_username %}
-                    <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="description">LinkedIn</span></a></li>
-                    {% endif %}
-
-                    {% if site.vine_username %}
-                    <li><a class="fa fa-2x fa-vine" href="https://vine.co/{{ site.vine_username }}"><span class="description">Vine</span></a></li>
-                    {% endif %}
-
-                    {% if site.instagram_username %}
-                    <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.instagram_username }}"><span class="description">Instagram</span></a></li>
-                    {% endif %}
-
-                    {% if site.flickr_usernmae %}
-                    <li><a class="fa fa-2x fa-flickr" href="https://flickr.com/photos/{{ site.flickr_username }}"><span class="description">Flickr</span></a></li>
-                    {% endif %}
-
-                    {% if site.steam_username %}
-                    <li><a class="fa fa-2x fa-steam" href="http://steamcommunity.com/id/{{ site.steam_username }}"><span class="description">Steam</span></a></li>
-                    {% endif %}
-
-                    {% if site.soundcloud_username %}
-                    <li><a class="fa fa-2x fa-soundcloud" href="https://soundcloud.com/{{ site.soundcloud_username }}"><span class="description">Soundcloud</span></a></li>
-                    {% endif %}
-
-                    {% if site.lastfm_username %}
-                    <li><a class="fa fa-2x fa-lastfm" href="http://www.last.fm/user/{{ site.lastfm_username }}"><span class="description">Last.fm</span></a></li>
-                    {% endif %}
-
-                    {% if site.stack_of_username %}
-                    <li><a class="fa fa-2x fa-stack-overflow" href="https://stackoverflow.com/users/{{ site.stack_of_username }}"><span class="description">Stack OF</span></a></li>
-                    {% endif %}
-
-                    {% if site.reddit_username %}
-                    <li><a class="fa fa-2x fa-reddit" href="https://reddit.com/user/{{ site.reddit_username }}"><span class="description">Reddit</span></a></li>
-                    {% endif %}
-
-                    {% if site.medium_username %}
-                    <li><a class="fa fa-2x fa-medium" href="https://medium.com/@{{ site.medium_username }}"><span class="description">Medium</span></a></li>
-                    {% endif %}
-
-                    {% if site.tumblr_username %}
-                    <li><a class="fa fa-2x fa-tumblr" href="https://{{ site.tumblr_username }}.tumblr.com/"><span class="description">Tumblr</span></a></li>
-                    {% endif %}
-
-                    {% if site.weibo_username %}
-                    <li><a class="fa fa-2x fa-weibo" href="https://weibo.com/{{ site.weibo_username }}"><span class="description">微博</span></a></li>
-                    {% endif %}
-
-                    {% if site.blog_url %}
-                    <li><a class="fa fa-2x fa-tags" href="{{ site.baseurl }}{{ site.blog_url }}"><span class="description">Blog</span></a></li>
-                    {% endif %}
-
-                    {% if site.email %}
-                    <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description">Email</span></a></li>
-                    {% endif %}
-
-                    {% if site.public_key_url %}
-                    <li><a class="fa fa-2x fa-key" href="{{ site.public_key_url }}"><span class="description">PGP Key</span></a></li>
-                    {% endif %}
-                </ul>
+  <body id="page-top">
+    <!-- navigation bar -->
+    <nav id="mainNav" class="navbar navbar-expand-md fixed-top scrolling-navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Wendell Rocha</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto w-100">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Experiências</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contato">Contato</a>
+            </li>
         </div>
+      </div>
+    </nav>
+    </div>
 
-    </body>
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img id="avatar" class="img-fluid circle mb-5 d-block mx-auto" src="img/profile.jpg" alt="">
+        <h1 class="text-uppercase mb-0">Wendell Rocha</h1>
+        <hr>
+        <h2>Desenvolvedor Frontend - Desenvolvedor Backend</h2>
+      </div>
+    </header>
+    <!-- header -->
+
+    <!-- Experiencias -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experiências</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s">
+                <div class="icon color-1">
+                  <i class="fa fa-html5"></i>
+                </div>
+                <h4>Frontend</h4>
+                <p>
+                  Conhecimento em HTML5, CSS, Bootstrap e jQuery.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s">
+                <div class="icon color-1">
+                  <i class="fa fa-terminal"></i>
+                </div>
+                <h4>Backend</h4>
+                <p>
+                  Conhecimento em Java, C# (.NET Core, ASP.NET MVC) e Python.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s">
+                <div class="icon color-1">
+                  <i class="fa fa-microchip"></i>
+                </div>
+                <h4>Internet das Coisas (IoT)</h4>
+                <p>
+                  Programação voltada ao Raspberry Pi e Arduino.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s">
+                <div class="icon color-1">
+                  <i class="fa fa-server"></i>
+                </div>
+                <h4>Servidores</h4>
+                <p>
+                  Gerenciamento de redes e servidores Windows e Linux.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s">
+                <div class="icon color-1">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <h4>Zabbix</h4>
+                <p>Conhecimento de implementação, monitoração e gerenciamento com o <a href="#">Zabbix</a>.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s">
+                <div class="icon color-1">
+                  <i class="fa fa-stack"></i>
+                </div>
+                <h4>Sistema de Gerenciamento de Atendimento (SGA)</h4>
+                <p>Conhecimento de implementação, gerenciamento e suporte com o <a href="#">SGA</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Entre em contato!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Envie-me um email ou entre em contato pelo telegram que responderei o mais rápido possível.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-github fa-3x mb-3 sr-contact-1"></i>
+            <p>
+              <a href="http://github.com/wendellrocha">@wendellrocha</a>
+            </p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-telegram fa-3x mb-3 sr-contact-2"></i>
+            <p>
+              <a href="https://t.me/Wendros">@Wendros</a>
+            </p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-3"></i>
+            <p>
+              <a href="mailto:wendellrocha@outlook.com">wendellrocha@outlook.com</a>
+            </p>
+          </div>
+        </div>
+    </section>
+
+  </body>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/main.js"></script>
+
 </html>
