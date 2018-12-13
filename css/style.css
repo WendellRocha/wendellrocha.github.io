@@ -135,24 +135,12 @@ header.masthead h2 {
     position: relative;
 }
 
-.section-header .section-title:before {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    width: 80px;
-    height: 2px;
-    background: #007bff;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    transition: 0.3s;
-}
-
 .item-boxes {
     padding: 30px;
     border-radius: 4px;
     border: 1px solid #eaeaea;
     margin: 15px 0;
-    webkit-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
