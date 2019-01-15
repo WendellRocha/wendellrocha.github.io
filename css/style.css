@@ -30,7 +30,7 @@ section {
 #mainNav {
     background-color: transparent !important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #fff !important;
+    color: #fff;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
